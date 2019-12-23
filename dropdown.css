@@ -1,0 +1,81 @@
+
+.image_list_icon {
+    z-index: 200;
+}
+
+.image_list_wrapper {
+    top: 50px;
+    right: 1px;
+    /* width: 100%; */
+    max-height: 400px;
+    display: inline-block;
+    position: absolute;
+    margin: 5px 0 0 -5px;
+    padding: 0 0 0 100px;
+    background: transparent;
+    overflow-y: scroll;
+}
+
+.image_dropdown {
+    max-width: 1200px;
+    /* width: 170px; */
+    width: auto;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.image_dropdown ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.image_dropdown li {
+    max-width: calc(1200px/5);
+    position: relative;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+.image_dropdown > li {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    display: inline;
+}
+
+.image_dropdown_child {
+    width: 170px;
+    /* width: 100%; */
+    max-height: 400px;
+    display: none;
+    position: relative;
+    padding: 0;
+    background: white;
+    color: #5c5c5c;
+    overflow-x: visible !important;
+    border: solid 1px #5c5c5c;
+}
+
+.image_dropdown_child li {
+    width: 100%;
+    border: solid 1px #5c5c5c;
+    background: white;
+}
+
+.image_dropdown_child li a {
+    /* padding: 5px 0; */
+    /* margin: -5px -5px -5px -5px; */
+    padding: 5px;
+    margin: -5px;
+    display: block;
+    color: #5c5c5c;
+}
+
+.image_dropdown li a:hover {
+    background: #5c5c5c;
+    color: #f5f5f5;
+}

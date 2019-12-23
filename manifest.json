@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Github Image Suggestion",
+    "version": "0.0.1",
+    "description": "Suggestion",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches":["https://github.com/*/edit/*"],
+            "js": ["jquery-3.4.1.min.js", "main.js"],
+            "css": ["dropdown.css", "arrow_box.css"]
+        }
+    ]
+}
